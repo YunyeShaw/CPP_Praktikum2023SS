@@ -1,0 +1,20 @@
+template<class T> 
+class MyClass{
+    private: //Example: some member of type T
+    T _somemember; 
+    public: 
+    //Example: methode taking T as parameter
+    void processData(T& data); 
+};
+
+template<class T> 
+void MyClass<T>:: processData(T & data){
+    //Implementation 
+}
+
+//Instantiiert 
+#include "myClass.hpp"
+int main(){
+    MyClass<double> myObjeckt; 
+    myObject.processData(5.0); 
+}
